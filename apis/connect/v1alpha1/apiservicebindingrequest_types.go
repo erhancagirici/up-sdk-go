@@ -89,7 +89,6 @@ type NamespaceRequest struct {
 	// scheduling logic.
 	// +listType=map
 	// +listMapKey=exportName
-	// +kubebuilder:validation:items:MinLength=1
 	Resources []ResourceTargetConfig `json:"resources"`
 }
 

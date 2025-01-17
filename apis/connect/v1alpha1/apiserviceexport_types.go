@@ -63,7 +63,7 @@ type APIServiceExportSpec struct {
 	// description is a human-readable description of the exported API.
 	// It should be a short one-liner, with a maximum length of 48 chars.
 	// +optional
-	// +kubebuilder:validation:items:MaxLength=48
+	// +kubebuilder:validation:MaxLength=48
 	Description string `json:"description,omitempty"`
 	// apiSource is a reference to control plane that is the
 	// source of truth of the CRD schema.
